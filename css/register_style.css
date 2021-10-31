@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Bellota-LightItalic";
+  src: url(../fonts/Bellota-LightItalic.otf);
+}
+
+@font-face {
+  font-family: "Bellota-BoldItalic";
+  src: url(../fonts/Bellota-BoldItalic.otf);
+}
+
+a {
+  text-decoration: none;
+  color: #be185d;
+}
+
+#second {
+  display: none;
+}
+
+form {
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-image: url("../images/backrounds/desktop.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 950pm;
+}
+
+.login_box {
+  font-family: "Bellota-LightItalic", sans-serif;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10%;
+  width: 50%;
+  background-color: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 7px;
+  padding: 5px;
+  opacity: 0.99;
+}
+
+.login_header {
+  font-family: "Bellota-LightItalic", sans-serif;
+  width: 100%;
+  height: 90px;
+  background-color: #be185d;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.login_header h1 {
+  font-family: "Bellota-BoldItalic", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fa0e70;
+  text-shadow: rgba(7, 21, 99, 0.981) 0.5px 1.5px 0px;
+  font-size: 250%;
+}
+
+input[type="button"] {
+  border: 1px solid #be185d;
+  background-color: #e987b0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #330517;
+  text-shadow: rgba(7, 21, 99, 0.981) 0.5px 0.5px 0px;
+  font-family: "Bellota-LightItalic", sans-serif;
+  font-size: 100%;
+}
+
+input[type="button"]:hover {
+  border-color: #fa0e70;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #e5e5e5;
+  margin-top: 5%;
+  width: 70%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #74b9ff;
+}

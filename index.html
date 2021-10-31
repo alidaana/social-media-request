@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="css/register_style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/register.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="login_box">
+      <div class="login_header">
+        <h1>facebook</h1>
+        Login or signup below!
+      </div>
+      <div id="first">
+        <form action="" method="POST">
+          <input type="email" name="email" placeholder="Email Address" id="login_email" value="" required />
+          <br />
+          <input type="password" name="password" placeholder="Password" id="login_password" required />
+          <br />
+          <span id="message2"></span>
+          <br />
+          <input type="button" name="login_button" value="login" id="login_button" />
+          <br />
+          <a href="#" id="signup" class="signup">Need an Account? Register here</a>
+        </form>
+      </div>
+      <!-- ========================================= REGISTER ====================================== -->
+      <div id="second">
+        <form action="" method="POST">
+          <input type="text" id="username" name="username" placeholder="username" value="" required />
+          <br />
+
+          <input type="email" name="email" id="email" placeholder="email" value="" required />
+          <br />
+
+          <input type="password" name="password" id="password" placeholder="Password" required />
+          <br />
+          <input type="password" name="password2" id="confirm_password" placeholder="Confirm Password" required />
+          <br />
+
+          <span id="message"></span>
+          <br />
+
+          <input type="button" name="register_button" id="register_button" value="register" disabled />
+          <br />
+          <a href="#" id="signin" class="signin">Already have an account? Signup here</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ====================================== SCRIPT =================================== -->
+  <script>
+    $("#register_button").attr("disabled", true);
+    $("#password, #confirm_password").on("keyup", function () {
+      if ($("#password").val() == $("#confirm_password").val()) {
+        $("#message").html("Passwords match").css("color", "green");
+        $("#register_button").attr("disabled", false);
+      } else {
+        $("#message").html("Passwords donot match").css("color", "red");
+        $("#register_button").attr("disabled", true);
+      }
+    });
+  </script>
+  <script src="js/creatAccount.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
